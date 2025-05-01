@@ -20,7 +20,7 @@ This tutorial will show you how to use a Fabric Pipeline template to process you
 
 ### Import and Configure the Content Understanding Field Extraction Notebook
 
-1. Download the Notebook from GitHub onto your computer. Go to your Fabric Workspace and click on “Import” near the top left and select Notebook.
+1. [Download the Field Extraction Notebook](Field%20Extraction%20Template%20Notebook.ipynb) onto your computer. Go to your Fabric Workspace and click on “Import” near the top left and select Notebook.
 2. Open the Notebook once it is imported. Inside the Notebook, follow instructions to enter your credentials:
    - Azure AI Services Resource Endpoint
    - Azure AI Services Resource Key
@@ -32,7 +32,7 @@ This tutorial will show you how to use a Fabric Pipeline template to process you
 
 ### Import the Pipeline Template
 
-1. Download the Pipeline Template zip file from GitHub.
+1. [Download the Pipeline Template zip file](Pipeline%20Template.zip).
 2. Go to your Fabric Workspace and click on “New Item” in the top left corner. Then look for the “Data pipeline” item before clicking on it to create a new pipeline.
 3. Once the pipeline is created, click on the Import arrow near the top left corner which will prompt you to select the template zip file. Select the downloaded zip file then click on “Use this template” button.
 
@@ -45,9 +45,11 @@ This tutorial will show you how to use a Fabric Pipeline template to process you
 #### Connect Azure Blobs as Copy Data Source
 
 1. Click on the Copy data activity and go to the source tab. Under connection, click on the dropdown then select more. Search for blobs when prompted to choose a data source.
-2. Click on Azure Blobs and connect your Azure Blob Storage Account by entering your storage account name and Shared Access Signature (SAS). This should be the same Blob Storage account that was used in the Notebook above. You can learn more about setting up an Azure Blob Storage connection in Fabric [here](https://learn.microsoft.com/en-us/azure/storage/blobs/).
-
-3. Once your Blob Storage connection is created and added to the Copy data activity, select “Wildcard file path” in file path type and in "Container", enter the name of the Blob Storage outputs Container where your Content Understanding results are stored. In File format, ensure that “JSON” is selected from the dropdown.
+   
+   ![Screenshot](images/findblobstorage.png)
+3. Click on Azure Blobs and connect your Azure Blob Storage Account by entering your storage account name and Shared Access Signature (SAS). This should be the same Blob Storage account that was used in the Notebook above. You can learn more about setting up an Azure Blob Storage connection in Fabric [here](https://learn.microsoft.com/en-us/azure/storage/blobs/).
+   ![Screenshot](images/connectblobstorage.png)
+4. Once your Blob Storage connection is created and added to the Copy data activity, select “Wildcard file path” in file path type and in "Container", enter the name of the Blob Storage outputs Container where your Content Understanding results are stored. In File format, ensure that “JSON” is selected from the dropdown.
 
 #### Connect LakeHouse as Copy Data Destination
 
