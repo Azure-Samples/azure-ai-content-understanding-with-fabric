@@ -45,7 +45,7 @@ This tutorial will show you how to use a Fabric Pipeline template to process you
 #### Connect Azure Blobs as Copy Data Source
 
 1. Click on the Copy data activity and go to the source tab. Under connection, click on the dropdown then select more. Search for blobs when prompted to choose a data source.
-2. Click on Azure Blobs and connect your Azure Blob Storage Account by entering your storage account name and Shared Access Signature (SAS). This should be the same Blob Storage account that was used in the Notebook above. You can learn more about setting up an Azure Blob Storage connection in Fabric https://learn.microsoft.com/en-us/azure/storage/blobs/.
+2. Click on Azure Blobs and connect your Azure Blob Storage Account by entering your storage account name and Shared Access Signature (SAS). This should be the same Blob Storage account that was used in the Notebook above. You can learn more about setting up an Azure Blob Storage connection in Fabric [here](https://learn.microsoft.com/en-us/azure/storage/blobs/).
 
 3. Once your Blob Storage connection is created and added to the Copy data activity, select “Wildcard file path” in file path type and in "Container", enter the name of the Blob Storage outputs Container where your Content Understanding results are stored. In File format, ensure that “JSON” is selected from the dropdown.
 
